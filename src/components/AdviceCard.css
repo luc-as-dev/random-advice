@@ -1,0 +1,84 @@
+.advice-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: hsl(217, 19%, 24%);
+  color: #fff;
+
+  max-width: 524px;
+  border-radius: 15px;
+  padding: 40px 40px 60px 40px;
+  gap: 25px;
+}
+
+.advice-card-title {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.advice-card-text {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.advice-card-button {
+  position: relative;
+  top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.advice-card-button:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+}
+
+.advice-card-button img {
+  height: 40%;
+}
+
+.advice-card-divider-mobile {
+  display: none;
+}
+
+@media (max-width: 604px) {
+  .advice-card-container {
+    max-width: 345px;
+  }
+  .advice-card-inner {
+    padding-left: 10px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+  }
+
+  .advice-card-title {
+    font-size: 12px;
+  }
+
+  .advice-card-text {
+    font-size: 22px;
+  }
+
+  .advice-card-divider-desktop {
+    display: none;
+  }
+  .advice-card-divider-mobile {
+    display: initial;
+  }
+}
